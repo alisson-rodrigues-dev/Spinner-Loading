@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+</head>
+    <style>
+        body {
+            background: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .loader {
+            height: 80px;
+            width: 80px;
+            border: 8px solid rgba(0, 0, 0, .2);
+            border-left-color: blue;
+            border-radius: 50%;
+            animation: load 2s linear infinite;
+            
+        }
+
+        @keyframes load {
+            to { transform: rotate(360deg);}
+
+        }
+    </style>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
